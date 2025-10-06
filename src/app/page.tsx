@@ -198,7 +198,7 @@ export default function Home() {
                         imperialScript.variable,
                         birthstone.variable,
                         tangerine.variable,
-                        "w-full max-w-[600px] flex flex-col justify-start items-start relative overflow-hidden no-scrollbar overscroll-contain p-6"
+                        "w-full max-w-[600px] flex flex-col justify-start items-start relative overflow-x-hidden no-scrollbar overscroll-contain p-6"
                     )}
                 >
                     <span
