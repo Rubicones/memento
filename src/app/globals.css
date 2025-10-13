@@ -20,17 +20,18 @@
     body {
         height: 100vh;
         height: 100dvh;
-        overflow: hidden;
-        position: fixed;
+        overflow: auto; /* Changed from hidden to auto to allow scrolling */
+        position: relative; /* Changed from fixed to relative */
         width: 100%;
         -webkit-overflow-scrolling: touch;
     }
     
     /* Ensure content takes full screen */
-    #__next, [data-nextjs-page] {
-        height: 100vh;
-        height: 100dvh;
-        overflow: hidden;
+    #__next {
+        min-height: 100vh;
+        min-height: 100dvh;
+        overflow-y: auto; /* Allow vertical scrolling */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     
     /* Hide browser address bar and UI elements */
